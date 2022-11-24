@@ -9,8 +9,6 @@ public class LoginPage extends AbsPageObject {
     public LoginPage(WebDriver driver) {
         super(driver);
     }
-//    private String email = System.getProperty("email");
-//    private String password = System.getProperty("password");
 
     public MainPage signIn(String email, String password){
         WebElement form = driver.findElement(By.xpath("//form[@action = '/login/']"));

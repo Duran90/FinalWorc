@@ -51,7 +51,7 @@ public class CardsTests {
         mainPage.open();
         TestingPage testingPage = mainPage.getHeader().openTestingPage();
         LessonsPage lessonsPage = testingPage.clickOnCard(title);
-        assertTitlt(lessonsPage, title);
+        assertTitle(lessonsPage, title);
         assertDescription(lessonsPage, description);
         assertDuration(lessonsPage, duration);
         assertFormat(lessonsPage, format);
@@ -64,7 +64,7 @@ public class CardsTests {
         logger.info("Количество ожидаемых карточек: " + expectedCount + "/n" + "Фактическое кол-во: " + count);
     }
 
-    public void assertTitlt(LessonsPage lessonsPage, String title) {
+    public void assertTitle(LessonsPage lessonsPage, String title) {
         Assertions.assertEquals(title, lessonsPage.getTitle());
     }
 

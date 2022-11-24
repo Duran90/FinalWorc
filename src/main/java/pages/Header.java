@@ -4,10 +4,10 @@ import org.openqa.selenium.WebDriver;
 import pageObject.AbsPageObject;
 
 public class Header extends AbsPageObject {
-    public final String MENU_XPATH_COURSE_SELECTOR = "//p[contains(text(),'Курсы')]";
-    public final String MENU_XPATH_EVENTS_SELECTOR = "//p[contains(text(),'События')]";
-    public final String TESTING = "//a[contains(text(),'Тестирование')]";
-    public  final String NEAR = "//a[contains(text(),'Календарь мероприятий')]";
+    public static final String MENU_XPATH_COURSE_SELECTOR = "//p[contains(text(),'Курсы')]";
+    public static final String MENU_XPATH_EVENTS_SELECTOR = "//p[contains(text(),'События')]";
+    public static final String TESTING = "//a[contains(text(),'Тестирование')]";
+    public static final String NEAR = "//a[contains(text(),'Календарь мероприятий')]";
 
 
     public Header(WebDriver driver) {

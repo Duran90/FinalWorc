@@ -10,14 +10,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-public class AbsPageObject {
+public abstract class AbsPageObject {
 
     protected WebDriver driver;
     protected Actions actions;
 
+    protected WebDriverWait wait;
+
     public AbsPageObject(WebDriver driver) {
         this.driver = driver;
         this.actions = new Actions(driver);
+        this.wait = new WebDriverWait(driver, 10);
         PageFactory.initElements(driver, this);
     }
 
